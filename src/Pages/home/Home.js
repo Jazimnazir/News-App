@@ -18,7 +18,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import logo from '../../assets/images/logo.jpg';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import image from '../../assets/images/news.jpg';
 import ship from '../../assets/images/ship.webp';
 import icon from '../../assets/images/cs.jpg';
 import js from '../../assets/images/js.webp';
@@ -103,7 +102,7 @@ const Home = () => {
       <Grid container pl={11}>
         <Grid item xs={5} p={2}>
           <Typography variant='h5' sx={{ fontWeight: 'bold', mb: '11px' }}>
-            Featured Articel
+            Featured Article
           </Typography>
           <Grid>
             <img src={ship} width='500px' height='450'></img>
@@ -111,10 +110,12 @@ const Home = () => {
               The UK's Department for International Trade Wants To
               <br /> Help You Find The Right Opportunity.
             </Typography>
-            <Typography>
-              The UK Has Seen Rapid Growth In Supply Chain Industries <br />-
-              Discover New Opportunities Now. UK Government.
-            </Typography>
+            <Link to='/uk' style={{ textDecoration: 'none' }}>
+              <Typography>
+                The UK Has Seen Rapid Growth In Supply Chain Industries <br />-
+                Discover New Opportunities Now. UK Government.
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid item xs={7} mt={9}>
@@ -127,9 +128,11 @@ const Home = () => {
                 <br />
                 change and progress, causing an acceleration of the rate <br />
                 of change. However, it is not only technology trends and <br />{' '}
-                emerging technologies that are evolving, a lot more <br /> has
-                changed this year
+                emerging technologies that are evolving, a lot more
               </Typography>
+              <Link to='/tech' style={{ textDecoration: 'none' }}>
+                <Typography>Read more...</Typography>
+              </Link>
             </Grid>
           </Stack>
           <Stack direction='row' mt={1}>
@@ -146,6 +149,9 @@ const Home = () => {
                 <br />
                 to the JavaScript family.
               </Typography>
+              <Link to='/javascript' style={{ textDecoration: 'none' }}>
+                <Typography>Read more...</Typography>
+              </Link>
             </Grid>
           </Stack>
           <Stack direction='row' mt={1}>
@@ -165,6 +171,9 @@ const Home = () => {
                 forefront of setting the news agenda for the industry – and will
                 continue to do so.
               </Typography>
+              <Link to='/react' style={{ textDecoration: 'none' }}>
+                <Typography>Read more...</Typography>
+              </Link>
             </Grid>
           </Stack>
         </Grid>
@@ -323,7 +332,7 @@ const Home = () => {
           justifyContent: 'center',
         }}
       >
-        <Card sx={{ maxWidth: 320 }}>
+        <Card sx={{ maxWidth: 320, border: '2px solid black' }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
@@ -394,7 +403,7 @@ const Home = () => {
           </Collapse>
         </Card>
 
-        <Card sx={{ maxWidth: 320, pl: '27px' }}>
+        <Card sx={{ maxWidth: 320, ml: '21px', border: '2px solid black' }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
@@ -464,7 +473,7 @@ const Home = () => {
             </CardContent>
           </Collapse>
         </Card>
-        <Card sx={{ maxWidth: 320, pl: '27px' }}>
+        <Card sx={{ maxWidth: 320, ml: '21px', border: '2px solid black' }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
@@ -534,7 +543,7 @@ const Home = () => {
             </CardContent>
           </Collapse>
         </Card>
-        <Card sx={{ maxWidth: 320, pl: '27px' }}>
+        <Card sx={{ maxWidth: 320, ml: '21px', border: '2px solid black' }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
